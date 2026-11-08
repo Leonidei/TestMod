@@ -2,8 +2,11 @@ package com.leonidei.testmod.client;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.minecraft.data.client.ModelProvider;
 
+/**
+ * Точка входа генератора данных (Fabric Data Generator).
+ * Регистрирует все провайдеры ресурсов для автоматической сборки ассетов.
+ */
 public class TestmodDataGenerator implements DataGeneratorEntrypoint {
 
     @Override
