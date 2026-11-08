@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "testmod",
+  "version": "${version}",
+  "name": "TestMod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/testmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.leonidei.testmod.client.TestmodDataGenerator"
+    ],
+    "client": [
+      "com.leonidei.testmod.client.TestmodClient"
+    ],
+    "main": [
+      "com.leonidei.testmod.Testmod"
+    ]
+  },
+  "mixins": [
+    "testmod.mixins.json",
+    {
+      "config": "testmod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
