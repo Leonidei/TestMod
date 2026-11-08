@@ -1,3 +1,4 @@
 {
-  "item.testmod.ruby": "Ruby"
+  "item.testmod.ruby": "Ruby",
+  "itemgroup.ruby": "Ruby Group"
 }

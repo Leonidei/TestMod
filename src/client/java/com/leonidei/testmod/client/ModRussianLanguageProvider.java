@@ -16,5 +16,6 @@ public class ModRussianLanguageProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItem.RUBY, "Рубин");
+        translationBuilder.add("itemgroup.ruby", "Рубины");
     }
 }
